@@ -70,7 +70,7 @@ header p {
     width: 100%;
 }
 
-div.menu-principal {
+.menu-principal {
     display: flex;
     gap: 35px;
     padding: 20px 35px 0px 35px;
@@ -78,20 +78,34 @@ div.menu-principal {
     align-items: center;
     scrollbar-width: none;
 }
-div.sub-nav {
+.sub-nav {
     display: flex;
     gap: 16px;
     align-items: center;
     scrollbar-width: none;
 }
+
+div.menu-scroll {
+    position: relative;
+    overflow: hidden;
+    margin-left: 30px;
+    
+}
+
+div.menu-scroll-direito {
+    display: flex;
+    gap: 36px;
+    scrollbar-width: none;
+}
 a.nav-icon {
     height: 24px;
 }
-.menu-principal {
+
+a.nav-link {
     font-family: var(--font-destaque);
+    color: #909090;
+    text-align: center;
     font-style: italic;
-    font-size: 1.3em;
-    color: var(--cor2);
-    text-decoration: none;
-    padding: 100px;
+    font-size: 18px;
 }
+
